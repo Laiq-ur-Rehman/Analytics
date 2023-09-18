@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --dark-blue:#172755;
+    --pink:#EF2A82;
+    --blue:#0088F0;
+    --chart-lines:#EEEEF6;
+    --gray:#8794BA;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.main{
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    font-family: 'Roboto', sans-serif;
+    margin-inline: auto;
+}
+.background{
+    width: 100%;
+    max-width: 1600px;
+    height: 815px;
+    background-color: var(--pink);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+.header-background{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    max-width: 1600px;
+    height: 800px;
+    background-color: var(--dark-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+.second{
+    float: right;
+}
+.container{
+    position: absolute;
+    top: 7.5%;
+    left: 15.85%;
+    width: 68.3%;
+    max-width: 1181px;
+    margin-inline: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 163px;
+    
+}
+.nav-menu>ul{
+    display: flex;
+    gap: 36px;
+}
+.nav-menu li{
+    list-style-type: none;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: var(--gray);
+}
+.navbar-contact{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar-contact>a{
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 16px;
+}
+.navbar-contact>button{
+    display: block;
+    padding: 10px 53px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    background-color: var(--dark-blue);
+    border-radius: 68px;
+}
+.header-content{
+    width: 58%;
+    padding-bottom: 241px;
+}
+.header-content>h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    color: white;
+}
+.header-content>p{
+    font-size: 18;
+    font-weight: 400;
+    line-height: 27px;
+    color: var(--gray);
+    margin-bottom: 49px;   
+}
+.header-content>button{
+    padding: 10px 80px;
+    color: white;
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    border-radius: 68px;
+}
+.statistics{
+    position: absolute;
+    top: 30%;
+    right: -8%;
+    width: 45%;
+    padding: 25px;
+    box-shadow: 0px 18px 50px -15 #192A5933;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    gap: 12.78px;
+    flex-wrap: wrap;
+}
+.stats{
+    width: 30%;
+}
+.stats-1{
+    position: absolute;
+    top: 45%;
+    right: 22%;
+    width: fit-content;
+    padding: 25px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 32px;
+}
