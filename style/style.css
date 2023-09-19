@@ -18,24 +18,21 @@ body{
 .main{
     background-color: #F8F9FF;
     position: relative;
-    width: 100%;
-    max-width: 1600px;
+    width: 100%;  
     font-family: 'Roboto', sans-serif;
     margin-inline: auto;
 }
 .background{
-    width: 100%;
-    max-width: 1600px;
-    height: 815px;
+    width: 100%; 
+    height: 800px;
     background-color: var(--pink);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
 }
 .header-background{
     position: absolute;
-    top: 0%;
+    top: -0.5%;
     left: 0%;
     width: 100%;
-    max-width: 1600px;
     height: 800px;
     background-color: var(--dark-blue);
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
@@ -46,8 +43,9 @@ body{
 }
 .header-container{
     position: absolute;
-    top: 7.5%;
-    left: 15.85%;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 68.3%;
     max-width: 1181px;
     margin-inline: auto;
@@ -129,6 +127,7 @@ header{
 .header-content{
     width: 58%;
     padding-bottom: 241px;
+    position: relative;
 }
 .header-content>h1{
     font-size: 50px;
@@ -177,16 +176,17 @@ header{
 }
 .statistics{
     position: absolute;
-    top: 30%;
-    right: -8%;
-    width: 45%;
+    top: 19%;
+    right: -27%;
+    width: 55%;
     padding: 25px;
-    box-shadow: 0px 18px 50px -15 #192A5933;
+    padding-right: 0;
+    box-shadow: 0px 18px 50px -15px #192A5933;
     border: 2px solid white;
     background-color: white;
     border-radius: 30px;
     display: flex;
-    gap: 12.78px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .stats{
@@ -195,8 +195,8 @@ header{
 }
 .stats-1{
     position: absolute;
-    top: 40%;
-    right: 22%;
+    top: 36%;
+    right: 7%;
     width: fit-content;
     padding: 25px;
     border: 1px solid white;
@@ -211,7 +211,7 @@ header{
     transform: scale(1.3);
 }
 .feature-container{
-    width: 80;
+    width: 68;
     max-width: 1181px;
     margin-inline: auto;
     position: relative;
@@ -251,4 +251,20 @@ header{
     line-height: 22.4px;
     color: var(--gray);
     margin: 0px;
+}
+.wrapper{
+    margin-bottom: 120px;
+}
+.wrapper-content{
+    display: flex;
+    justify-content: space-between;
+}
+.svg{
+    border: 1px solid white;
+    background-color: white;
+    width: 50%;
+    border-radius: 30px;
+}
+.content{
+    width: 40%;
 }
