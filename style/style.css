@@ -30,7 +30,7 @@ body{
 }
 .header-background{
     position: absolute;
-    top: -10px;
+    top: -15px;
     left: 0%;
     width: 100%;
     height: 800px;
@@ -104,25 +104,23 @@ header{
 .navbar-contact>button::after{
     content: '';
     width: 0%;
-    height: 75%;
+    height: 100%;
     position: absolute;
     background-color: var(--pink);
     top: 0;
     left: 0;
     border-radius: 68px;
-    transition: all 0.3s ease-in;  
+    transition: all 0.3s ease-in; 
+    z-index: -1; 
 }
 .navbar-contact>button:hover{
     background-color: transparent;
     border: none;
-    color: transparent;
+    color: white;   
 }
 .navbar-contact>button:hover::after{
     width: 100%;
-    content: 'Sign up';
-    padding-top: 10px;
-    color: white;
-    font-size: 16px;
+    content: '';   
 }
 .header-content{
     width: 58%;
@@ -165,18 +163,19 @@ header{
 .header-content>button:hover{
     background-color: transparent;
     border: none;
-    color: var(--dark-blue);
+    
 }
 .header-content>button:hover::after{
-    content: 'Try for free';
+    content: '';
     width: 100%;
     padding-top: 10px;
     font-size: 16px;
     color: white;
+    z-index: -1;
 }
 .statistics{
     position: absolute;
-    top: 215px;
+    top: 140px;
     right: -27%;
     width: 55%;
     padding: 25px;
@@ -195,7 +194,7 @@ header{
 }
 .stats-1{
     position: absolute;
-    top: 350px;
+    top: 300px;
     right: 7%;
     width: fit-content;
     padding: 25px;
@@ -288,15 +287,16 @@ header{
 }
 footer{
     width: 100%;
-    height: 1280px;
+    height: 1208px;
     background-color: var(--pink);
     clip-path: polygon(0 18%, 100% 0, 100% 100%, 0% 100%);
     position: relative;
+    overflow: hidden;
 }
 footer::after{
     content: '';
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -310,13 +310,11 @@ footer::after{
     position: absolute;
     bottom: 0px;
     right: 0%;
+    z-index: -50;
 }
 .footer-container{
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 68%;
+    margin-top: 250px;
+    margin-inline: auto;
     max-width: 1181px;
     text-align: center;
 }
@@ -342,16 +340,16 @@ footer::after{
     justify-content: center;
     margin-bottom: 100px;
 }
-.starter, .premium{
+.option{
     background-color: #0F1F4B;
     border: 1px solid #0F1F4B;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     color: white;
-    z-index: -1;
-    padding: 50px 30px 70px 30px;
+    padding: 50px 60px 70px 60px;
     box-shadow: 0px 18px 50px -15px #060F28;
+    transition: all 0.1s ease-in;
 }
 .first{
     border-bottom: 1px solid #2A407C;
@@ -400,20 +398,15 @@ footer::after{
     border: 1px solid #2A407C;
     background-color: #0F1F4B;
 }
-.standard{
+.option:hover{
     background-color: #ffffff;
     border: 1px solid #ffffff;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
     color: var(--dark-blue);
-    z-index: -1;
-    padding: 50px 30px 70px 30px;
-    box-shadow: 0px 18px 50px -15px #060F28;
 }
-.standard>button{
+.option:hover button {
     background-color: var(--pink);
     border: 1px solid var(--pink);
+    cursor: pointer;
 }
 .border{
     width: 100%;
