@@ -48,18 +48,14 @@ body{
     top: -15px;
     z-index: -99;  
 }
-.header{
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y:top;
-    overflow: visible;
-}
 header{
     padding-top: 60px;
     transform: skewY(5deg);
+    max-width: 1900px;
+    margin-inline: auto;
     background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: top;
+    background-position-x:left, right;
+    background-position-y:top;
 }
 .header-background{
     display: flex;
@@ -67,7 +63,7 @@ header{
     align-items: center;
     margin-bottom: 163px;
     max-width: 1181px;
-    margin-inline: auto;
+    margin-inline: auto;  
 }
 .nav-menu>ul{
     display: flex;
