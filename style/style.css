@@ -60,7 +60,6 @@ header{
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y: top;
-    -webkit-background-origin: padding-box;
 }
 .header-background{
     display: flex;
@@ -136,6 +135,7 @@ header{
     content: '';   
 }
 .header-content{
+    display: flex;
     max-width: 1181px;
     margin-inline: auto;
 }
