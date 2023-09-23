@@ -49,18 +49,24 @@ body{
     z-index: -99;  
 }
 .header{
-    transform: skewY(5deg);
     background-repeat: no-repeat;
-    background-position-x: left, 100%;
-    background-position-y: top;
-    overflow: hidden;
+    background-position-x: right;
+    background-position-y:top;
+    overflow: visible;
 }
 header{
+    padding-top: 60px;
+    transform: skewY(5deg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: top;
+    -webkit-background-origin: padding-box;
+}
+.header-background{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 163px;
-    padding-top: 60px;
     max-width: 1181px;
     margin-inline: auto;
 }
@@ -132,7 +138,6 @@ header{
 .header-content{
     max-width: 1181px;
     margin-inline: auto;
-    
 }
 .content-top{
     width: 45%;
@@ -204,7 +209,7 @@ header{
 }
 .stats-1{
     position: absolute;
-    top: 30%;
+    top: 32%;
     left: -50px;
     width: fit-content;
     padding: 25px;
