@@ -36,7 +36,7 @@ body{
     height: 100%;
     background-color: var(--dark-blue);
     position: absolute;
-    top: -250px;
+    top: -300px;
     z-index: -99;  
 }
 .header-container::after{
@@ -412,23 +412,25 @@ header::after{
     margin-bottom: 15px;
 }
 .feature-content P{
+    width: 90%;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
     color: var(--gray);
     margin: 0px;
+    margin-inline: auto;
 }
 .wrapper{
     margin-bottom: 120px;
 }
 .wrapper-content{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .svg{
     border: 1px solid white;
     background-color: white;
-    width: 50%;
+    width: 40%;
     border-radius: 30px;
     box-shadow: 0px 18px 50px -15px #192A5933;
     padding: 40px;
@@ -436,7 +438,7 @@ header::after{
 .svg-1{
     border: 1px solid white;
     background-color: white;
-    width: 50%;
+    width: 40%;
     border-radius: 30px;
     box-shadow: 0px 18px 50px -15px #192A5933;
     padding: 40px;
@@ -772,6 +774,9 @@ footer::after{
     .feature-content{
         flex-direction: column;
         gap: 40px;
+    }
+    .feature-content P{
+        width: 100%;
     }
     .feature{
         display: flex;
