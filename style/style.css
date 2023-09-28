@@ -28,42 +28,49 @@ body{
     background-color: var(--pink);
     width: 100%;
     position: relative;
-    transform:skewY(-5deg) ;
+    /*transform:skewY(-5deg) ;*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);*/
+    isolation: isolate;
 }
 .header-container::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-blue);
+
     position: absolute;
-    top: -350px;
-    z-index: -99;  
+    top: 65%;
+    left: 0px;
+    content: '';
+    background-color:#F8F9FF ;
+    width: 100%;
+    height: 40%;
+    clip-path: polygon(0 87%, 100% 13%, 100% 100%, 0% 100%);
 }
 .header-container::after{
     content: '';
     width: 100%;
     height: 100%;
     background-color: var(--dark-blue);
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
     position: absolute;
     top: -15px;
-    z-index: -99;  
+    z-index: -99;
+     
 }
 header{
     padding-top: 60px;
-    transform: skewY(5deg);
-    max-width: 1900px;
+    /*transform: skewY(5deg);*/
+    width: 100%;
     margin-inline: auto;
     background-repeat: no-repeat;
     background-position-x:left, right;
-    background-position-y:top;
+    background-position-y:top, -250px;
     position: relative;
     isolation: isolate;
 }
 header::after{
     content: '';
-    transform: skewY(-5deg);
+    /*transform: skewY(-5deg);*/
     position: absolute;
     inset: -20px -20px 15px -20px;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
     z-index: -1;
     background: var(--dark-blue);
     opacity: 0;
@@ -290,10 +297,10 @@ header::after{
     max-width: 1600px;
     width: 90%;
     margin-inline: auto;
+    padding-bottom: 20px;
 }
 .content-top{
     width: 100%;
-    float: left;
 }
 .content-top>h1{
     font-size: clamp(1.25rem, 0.5531rem + 3.4843vw, 3.125rem);
@@ -309,6 +316,7 @@ header::after{
     margin-bottom: 49px;   
 }
 .content-top>button{
+    
     padding: 10px 80px;
     color: white;
     font-size: 16px;
@@ -355,7 +363,11 @@ header::after{
 }
 .stats{
     width: 33.3%;
-    transition: all 0.3s;
+    transition: all 0.3s;   
+}
+.stats>svg{
+    border-radius: 40px;
+    padding: 10px;
 }
 .stats-1{
     position: absolute;
