@@ -58,6 +58,7 @@ header{
     padding-top: 60px;
     /*transform: skewY(5deg);*/
     width: 100%;
+    max-width: 1900px;
     margin-inline: auto;
     background-repeat: no-repeat;
     background-position-x:left, right;
@@ -298,6 +299,7 @@ header::after{
     width: 90%;
     margin-inline: auto;
     padding-bottom: 20px;
+    height: calc(100vh - 110px);
 }
 .content-top{
     width: 100%;
