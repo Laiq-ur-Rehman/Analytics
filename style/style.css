@@ -36,7 +36,7 @@ body{
     height: 100%;
     background-color: var(--dark-blue);
     position: absolute;
-    top: -300px;
+    top: -350px;
     z-index: -99;  
 }
 .header-container::after{
@@ -340,7 +340,7 @@ header::after{
     z-index: -1;
 }
 .statistics{
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     box-shadow: 0px 18px 50px -15px #192A5933;
     border: 2px solid white;
@@ -653,25 +653,40 @@ footer::after{
 .footer-nav i{
     color: var(--gray);
 }
-@media (max-width:1200px){
+@media (max-width:1400px){
     header::after{
         opacity: .25;
     }
     footer{
-        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);    
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);    
     }
     
     footer::after{
-        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     }
     .footer::after{
         opacity: .25;
     }
 }
 
-@media (max-width:1000px){
+@media (max-width:1200px){
     header::after{
         opacity: .5;
+    }
+    footer{
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);    
+    }
+    
+    footer::after{
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
+    }
+    .footer::after{
+        opacity: .5;
+    }
+}
+@media (max-width:1000px){
+    header::after{
+        opacity: .75;
     }
     footer{
         clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);    
@@ -681,7 +696,7 @@ footer::after{
         clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
     }
     .footer::after{
-        opacity: .5;
+        opacity: .75;
     }
 }
 @media (max-width:960px){
@@ -710,9 +725,6 @@ footer::after{
     .svg-1{
         width: 100%;
         grid-row: 2 / 3;
-        border: none;
-        background-color: transparent;
-        box-shadow: none;
     }
     .content{
         width: 100%;
@@ -732,7 +744,7 @@ footer::after{
 }
 @media (max-width:800px){
     header::after{
-        opacity: .75;
+        opacity: 1;
     }
     footer{
         clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);    
@@ -742,7 +754,7 @@ footer::after{
         clip-path: polygon(0 6%, 100% 0, 100% 100%, 0% 100%);
     }
     .footer::after{
-        opacity: .75;
+        opacity: 1;
     }
 }
 @media (max-width:770px){
@@ -784,18 +796,12 @@ footer::after{
     }
 }
 @media (max-width:600px){
-    header::after{
-        opacity: 1;
-    }
     footer{
         clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);    
     }
     
     footer::after{
         clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
-    }
-    .footer::after{
-        opacity: 1;
     }
 }
 @media (max-width:520px){
