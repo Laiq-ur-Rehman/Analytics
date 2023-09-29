@@ -62,10 +62,10 @@ header{
     margin-inline: auto;
     background-repeat: no-repeat;
     background-position-x:left, right;
-    background-position-y:top, -250px;
+    background-position-y:top, -200px;
     position: relative;
     isolation: isolate;
-    min-height: 100vh;
+    
 }
 header::after{
     content: '';
@@ -564,6 +564,17 @@ footer::after{
     box-shadow: 0px 18px 50px -15px #060F28;
     transition: all 0.1s ease-in;
 }
+.option-1{
+    background-color: #0F1F4B;
+    border: 1px solid #0F1F4B;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 50px 0px;
+    box-shadow: 0px 18px 50px -15px #060F28;
+    transition: all 0.1s ease-in;
+}
 .first{
     width: 80%;
     max-width: 65%;
@@ -617,7 +628,7 @@ footer::after{
     max-width: 65%;
     margin-inline: auto;
     color: white;
-    padding: 10px 80px;
+    padding: 10px 0px;
     border-radius: 68px;
     border: 1px solid #2A407C;
     background-color: #0F1F4B;
@@ -628,6 +639,16 @@ footer::after{
     color: var(--dark-blue);
 }
 .option:hover button {
+    background-color: var(--pink);
+    border: 1px solid var(--pink);
+    cursor: pointer;
+}
+.option-1:hover{
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    color: var(--dark-blue);
+}
+.option-1:hover button {
     background-color: var(--pink);
     border: 1px solid var(--pink);
     cursor: pointer;
@@ -666,6 +687,9 @@ footer::after{
 }
 .footer-nav i{
     color: var(--gray);
+}
+@media (max-width:1900px){
+    header{ min-height: calc(100vh + 110px);}
 }
 @media (max-width:1400px){
     .header-container::before{
@@ -770,10 +794,15 @@ footer::after{
 }
 @media (max-width:880px){
     .pricing{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .option{
-        width: 40%;
+        width: 100%;
+        margin-inline: auto;
+    }
+    .option-1{
+        grid-column: span 2;
+        width: 45%;
         margin-inline: auto;
     }
 }
@@ -819,10 +848,7 @@ footer::after{
     .footer>p{
         width: 80%;
     }
-    .option{
-        width: 50%;
-        margin-inline: auto;
-    }
+    
 }
 @media (max-width:660px){
     .feature-content{
@@ -851,6 +877,19 @@ footer::after{
     footer::after{
         clip-path: polygon(0 3%, 100% 0, 100% 100%, 0% 100%);
     }
+    .pricing{
+        grid-template-columns: 1fr;
+    }
+    .option{
+        width: 60%;
+        margin-inline: auto;
+    }
+    .option-1{
+        grid-column: auto;
+        width: 60%;
+        margin-inline: auto;
+    }
+
 }
 @media (max-width:520px){
     .footer>p{
