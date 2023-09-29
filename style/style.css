@@ -360,7 +360,7 @@ header::after{
     justify-content: space-between;
     flex-wrap: wrap;
     position:relative;
-    top: -30px;
+    bottom: 5px;
     right: -10%;
 }
 .stats{
